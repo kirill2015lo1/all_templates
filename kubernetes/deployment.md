@@ -1,3 +1,4 @@
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -88,3 +89,4 @@ spec:
           successThreshold: 1
           timeoutSeconds: 1
           initialDelaySeconds: 5
+```
