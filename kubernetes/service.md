@@ -30,3 +30,21 @@ spec:
       port: 80
       targetPort: 5000
 ```
+Loadbalancer:
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service2
+spec:
+  selector:
+    app: nginx2
+  type: LoadBalancer
+  loadBalancerIP: 192.168.50.137
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 80
+
+```
