@@ -1,3 +1,4 @@
+```
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -83,3 +84,4 @@ spec:
         - name: postgres-storage
           persistentVolumeClaim:
             claimName: postgresql-pvc
+```
